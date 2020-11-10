@@ -18,8 +18,9 @@ const gradeSchema = mongoose.Schema({
     require: true,
   },
   lastModified: {
-    type: String,
+    type: Date,
     require: true,
+    default: Date.now,
   },
 });
 

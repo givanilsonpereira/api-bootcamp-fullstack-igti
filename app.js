@@ -27,7 +27,9 @@ app.use(
 );
 
 app.get('/', (req, res) => {
-  res.send('API em execucao');
+  res.send('API em execucão');
 });
 
-app.listen(process.env.PORT || 8081, () => {});
+app.listen(process.env.PORT || 8081, () => {
+  console.log('API executando na porta ' + process.env.PORT);
+});
